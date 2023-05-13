@@ -1,1 +1,2 @@
-console.log(1);
+let counter = 1;
+console.log(counter);
