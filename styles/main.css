@@ -1,0 +1,11 @@
+body{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    width: 100%;
+    background: #fff;
+}
+button{
+    font-family: inherit;
+    cursor: pointer;
+
+}
