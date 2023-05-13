@@ -7,5 +7,17 @@ body{
 button{
     font-family: inherit;
     cursor: pointer;
-
+}
+.counter{
+    margin: auto;
+    width: 700px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.counter__value{
+    text-align: center;
+    font-size: 32px;
+    line-height: 44px;
 }
