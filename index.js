@@ -1,9 +1,17 @@
-let button =document.querySelector('button');
-let counterText = document.querySelector('.counter');
-let counter = 0;
+const counterEl = document.querySelector('[data-find="counterValue"]');
+const addOnePoolButton = document.getElementById("addOnePoolButton");
+const addTwoPoolsButton = document.getElementById("addTwoPoolsButton");
+const resetButton = document.getElementById("resetButton");
+
+console.log(counterEl.dataset);
+
+const COUNTER_INITIAL_VALUE = 0;
+
+let counter = COUNTER_INITIAL_VALUE;
 
 
-button.addEventListener('click', function() {
-    counter = counter+1;
-    counterText.innerText = counter;
+addOnePoolButton.addEventListener('click', function() {
+    counter = counter + addOnePoolButton.dataset.pools;
+    console.log(counter, addOnePoolButton.dataset.pools);
+    counterEl.innerText = counter;
 });
