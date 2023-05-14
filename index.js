@@ -3,7 +3,7 @@ const addOnePoolButton = document.getElementById("addOnePoolButton");
 const addTwoPoolsButton = document.getElementById("addTwoPoolsButton");
 const resetButton = document.getElementById("resetButton");
 
-console.log(counterEl.dataset);
+console.log(addOnePoolButton.dataset);
 
 const COUNTER_INITIAL_VALUE = 0;
 
