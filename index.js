@@ -7,7 +7,10 @@ console.log(addOnePoolButton.dataset);
 
 const COUNTER_INITIAL_VALUE = 0;
 
+
 let counter = COUNTER_INITIAL_VALUE;
+
+counterEl.innerText = counter;
 
 
 addOnePoolButton.addEventListener('click', function() {
@@ -17,5 +20,10 @@ addOnePoolButton.addEventListener('click', function() {
 
 addTwoPoolsButton.addEventListener('click', function() {
     counter = counter + parseInt(addTwoPoolsButton.dataset.pools);
+    counterEl.innerText = counter;
+});
+
+resetButton.addEventListener('click', function() {
+    counter = COUNTER_INITIAL_VALUE ;
     counterEl.innerText = counter;
 });
