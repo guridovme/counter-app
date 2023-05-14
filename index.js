@@ -11,7 +11,11 @@ let counter = COUNTER_INITIAL_VALUE;
 
 
 addOnePoolButton.addEventListener('click', function() {
-    counter = counter + addOnePoolButton.dataset.pools;
-    console.log(counter, addOnePoolButton.dataset.pools);
+    counter = counter + parseInt(addOnePoolButton.dataset.pools);
+    counterEl.innerText = counter;
+});
+
+addTwoPoolsButton.addEventListener('click', function() {
+    counter = counter + parseInt(addTwoPoolsButton.dataset.pools);
     counterEl.innerText = counter;
 });
